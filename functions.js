@@ -11,6 +11,7 @@
       });
 
       it('a function has access to its own local scope variables', function () {
+        ACTUAL = name;
         var fn = function () {
           var name = 'inner';
           ACTUAL = name;
